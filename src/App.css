@@ -1,38 +1,118 @@
-.App {
+#div-sobreescritura table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+
+#div-sobreescritura  th, #div-sobreescritura  td {
+  border: 0.6px solid black;
+  padding: 2px;
+  
+}
+
+.text-val-column {
+  font-size: 1em;
+}
+
+.th-custom {
+  background-color: rgb(4, 121, 121);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+} 
+
+.texto-derecha {
+  text-align: right !important;
+}
+
+.texto-izquierda {
+  text-align: left !important;
+}
+
+
+.td-custom {
+  font-weight: 600;
+} 
+
+.main-div {
+  padding: 2em 2em 2em 2em;
+  display: flex;
+  gap: 2em;
+}
+
+#div-sobreescritura  .card {
+  border: 1px solid rgb(202, 200, 200);
+  border-radius: 4px;
+  flex: 1;
+  flex-basis: 0;
+}
+
+#div-sobreescritura  .card-header {
+  width: 100%;
+  background-color: rgb(201, 81, 81);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#div-sobreescritura  .card-header-title {
   color: white;
+  font-size: 1.5em;
 }
 
-.App-link {
-  color: #61dafb;
+#div-sobreescritura  .card-body {
+  padding: 1em 1em 1em 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 1030px) {
+  .text-val-column {
+    font-size: 0.8em;
   }
-  to {
-    transform: rotate(360deg);
+
+  #div-sobreescritura  .card-header-title {
+    font-size: 1.3em;
   }
 }
+
+@media (max-width: 915px) {
+  .text-val-column {
+    font-size: 0.6em;
+  }
+
+  #div-sobreescritura  .card-header-title {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 915px) {
+  .text-val-column {
+    font-size: 1em;
+  }
+
+  .card-header-title {
+    font-size: 1.5em;
+  }
+
+  .main-div {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 510px) {
+  .text-val-column {
+    font-size: 0.8em;
+  }
+
+  .card-header-title {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 380px) {
+  .text-val-column {
+    font-size: 0.6em;
+  }
+
+  .card-header-title {
+    font-size: 1.1em;
+  }
+}
+

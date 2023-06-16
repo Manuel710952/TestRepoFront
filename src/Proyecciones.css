@@ -1,0 +1,93 @@
+/* 
+    rem: toma la unidades del font-size del elemnto raiz en este cso del body,
+    em: toma las unidades del font-size del elemento padre
+*/
+#main-container-proyecciones {
+    padding: 1em 1em 1em 1em;
+    font-size: 16px;
+}
+
+#sections-container-proyecciones .card-section {
+    border: 1px solid rgb(202, 200, 200);
+    border-radius: 4px;
+}
+  
+#sections-container-proyecciones .card-section-header {
+    background-color: rgb(201, 81, 81);
+    text-align: center;
+}
+  
+#sections-container-proyecciones .card-section-body {
+    padding: 1em 1em 1em 1em;
+}
+
+.card-header-title {
+    color: white;
+    font-size: 1.5em;
+}
+
+.table-proyecciones {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+  
+.cell-boder-black {
+    border: 0.6px solid black;
+    padding: 2px;
+}
+  
+.text-val-column-table-proyecciones {
+    font-size: 1em;
+}
+  
+.th-custom-table-proyecciones {
+    background-color: rgb(4, 121, 121) ;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+} 
+  
+.td-custom-table-proyecciones {
+    font-weight: 600;
+} 
+  
+.text-right-val-column {
+    text-align: right !important;
+}
+
+
+/*
+    Responsive
+ */
+ @media (max-width: 1030px) {
+    #main-container-proyecciones {
+        font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 915px) {
+    #main-container-proyecciones {
+        font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 915px) {
+    #main-container-proyecciones {
+        font-size: 10px;
+    }
+  }
+  
+  @media (max-width: 510px) {
+    #main-container-proyecciones {
+        font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 380px) {
+    #main-container-proyecciones {
+        font-size: 8px;
+    }
+  }
+  
+  
